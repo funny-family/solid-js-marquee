@@ -1,0 +1,58 @@
+{
+  "name": "solid-js-marquee",
+  "private": false,
+  "version": "0.0.0",
+  "description": "",
+  "author": "funny-family <https://github.com/funny-family>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funny-family/solid-js-marquee.git"
+  },
+  "homepage": "https://github.com/funny-family/solid-js-marquee#readme",
+  "bugs": {
+    "url": "https://github.com/funny-family/solid-js-marquee/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "html",
+    "marquee",
+    "solid-js-marquee"
+  ],
+  "type": "module",
+  "types": "./dist/types/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "main": "./dist/cjs/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./styles.css": "./dist/styles/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "concurrently \"rm -rf ./dist\" \"pnpm build:watch\"",
+    "vite:build": "vite build",
+    "build": "./scripts/build.sh",
+    "build:watch": "vite build --watch",
+    "release": "release-it",
+    "publish": "pnpm build && pnpm release"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "release-it": "^18.1.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vite-plugin-solid": "^2.11.6"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8.19"
+  }
+}
