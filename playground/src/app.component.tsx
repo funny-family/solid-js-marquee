@@ -1,8 +1,8 @@
 import './app.styles.css';
 import { Component } from 'solid-js';
-import { Section1 } from '@src/components/Section1/Section1';
+import { Section1 } from './components/Section1/Section1';
 
-export var App: Component = () => {
+export const App: Component = () => {
   return (
     <main>
       <Section1 />

@@ -15,36 +15,3 @@ code {
 * {
   box-sizing: border-box;
 }
-
-.resizer-container {
-  position: relative;
-  width: fit-content;
-}
-
-.resizer-container__resizer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.box {
-  display: grid;
-  place-items: center;
-  border: 1px solid black;
-  width: 200px;
-  height: 100px;
-}
-
-.resizer {
-  --size: 16px;
-
-  /* width: var(--size);
-  height: var(--size); */
-  block-size: var(--size);
-  inline-size: var(--size);
-  background-color: red;
-}
-
-.resizer_se {
-  cursor: se-resize;
-}

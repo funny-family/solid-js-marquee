@@ -36,7 +36,7 @@ export default defineConfig({
     outDir: resolvePath('../docs'),
   },
   server: {
-    port: 2311,
+    port: 9847,
     strictPort: true,
   },
 });
